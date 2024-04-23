@@ -12,7 +12,7 @@
   compaction_readahead_size=2097152
   strict_bytes_per_sync=false
   bytes_per_sync=1048576
-  max_background_jobs=4
+  max_background_jobs=12
   avoid_flush_during_shutdown=false
   max_background_flushes=-1
   delayed_write_rate=16777216
@@ -71,7 +71,7 @@
   wal_filter=nullptr
   table_cache_numshardbits=6
   dump_malloc_stats=false
-  db_write_buffer_size=2443141120
+  db_write_buffer_size=5678768128
   allow_ingest_behind=false
   keep_log_file_num=1000
   max_bgerror_resume_count=2147483647
@@ -151,7 +151,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true
@@ -251,7 +251,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true
@@ -351,7 +351,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true
@@ -451,7 +451,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true
@@ -551,7 +551,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true
@@ -651,7 +651,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true
@@ -751,7 +751,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true
@@ -851,7 +851,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true
@@ -951,7 +951,7 @@
   max_write_buffer_size_to_maintain=0
   sst_partitioner_factory=nullptr
   compaction_style=kCompactionStyleLevel
-  min_write_buffer_number_to_merge=1
+  min_write_buffer_number_to_merge=4
   memtable_factory=SkipListFactory
   memtable_insert_with_hint_prefix_extractor=nullptr
   force_consistency_checks=true

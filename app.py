@@ -11,6 +11,24 @@ from icecream import ic
 import bcrypt
 import json
 import credentials
+import git
+
+
+#########################
+ 
+@post('/secret_url_for_git_hook')
+def git_update():
+  repo = git.Repo('./mysite')
+  origin = repo.remotes.origin
+  repo.create_head('main', origin.refs.main).set_tracking_branch(origin.refs.main).checkout()
+  origin.pull()
+  return ""
+ 
+ 
+##############################
+@get("/")
+def _():
+  return "One"
 
 ##############################
 @get("/app.css")
@@ -39,8 +57,8 @@ def _(item_splash_image):
 
 
 ##############################
-@get("/")
-def _():
+#@get("/")
+#def _():
     try:
         db = x.db()
         q = db.execute("SELECT * FROM items ORDER BY item_created_at LIMIT 0, ?", (x.ITEMS_PER_PAGE,))
